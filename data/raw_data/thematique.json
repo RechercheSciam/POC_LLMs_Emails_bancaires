@@ -1,0 +1,87 @@
+{
+  "Offres et avantages": [
+    "Jazz",
+    "Sobrio",
+    "Cashback",
+    "Kapsul",
+    "Autres offres",
+    "BANXUP",
+    "Options"
+  ],
+  "Assurances": [
+    "Risques au quotidien",
+    "Assurance Auto",
+    "Assurance Habitation",
+    "Protection Juridique",
+    "Décès Obsèques",
+    "Dépendance",
+    "Santé"
+  ],
+  "Services en agence": [
+    "Gestion des rendez-vous et demande de rappel",
+    "Changemement de conseiller ou d agence",
+    "Horaires d agences",
+    "Nous contacter",
+    "Coffre-fort physique",
+    "Retrait",
+    "Devise et monnaie",
+    "Distributeur",
+    "Procuration"
+  ],
+  "Documents": [
+    "Mes factures et documents externes",
+    "Mes relevés en ligne et attestations",
+    "Service \"e-Documents\""
+  ],
+  "Authentification client et sécurité": [
+    "Authentification client et sécurité"
+  ],
+  "Données clients": [
+    "Données clients"
+  ],
+  "Compte et Budget": [
+    "Mes comptes externes",
+    "Ouverture transfert et clôture",
+    "Gestion du découvert",
+    "Frais bancaires",
+    "Rejet de paiement",
+    "Mon budget",
+    "Mes comptes et opérations"
+  ],
+  "Crédits à la consommation": [
+    "Etudiants",
+    "Projets",
+    "Crédit Renouvelable",
+    "Regroupement de crédits"
+  ],
+  "Prêts immobiliers": [
+    "Prêts immobiliers classiques",
+    "Prêts immobiliers réglementés",
+    "Assurance Emprunteur",
+    "Assurance Emprunteur-BFM"
+  ],
+  "Notifications": [
+    "Notifications"
+  ],
+  "Moyens de paiement": [
+    "Apple Pay",
+    "Paylib entre amis",
+    "Prélèvement",
+    "Virement",
+    "Chèque",
+    "Cartes",
+    "Virement instantané"
+  ],
+  "RIB/IBAN": [
+    "RIB IBAN"
+  ],
+  "Epargne et Placements": [
+    "Investissement immobilier",
+    "Assurance vie",
+    "Livrets d Epargne",
+    "Epargne logement",
+    "Bourse"
+  ],
+  "Crédit du Nord": [],
+  "Retraite": []
+}
