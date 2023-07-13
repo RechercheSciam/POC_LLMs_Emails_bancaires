@@ -40,11 +40,22 @@ class DataLLMsEB:
             question = item["labels"][0]["value"]
             description = item["descriptions"][0]["description"]
             description = self.clean_description(description)
+
+            # Add base URL to href attributes starting with /
+            description = re.sub(
+                r'<a href="/([^"]+)"',
+                r'<a href="https://particuliers.sg.fr/icd/pch/faq/\1"',
+                description
+            )
+            # Remove remaining HTML tags and keep only plain text
+            sanitized_description = self.sanitize_content(description)
+
             print("Question:", question)
-            print("Description:", description)
+            print("Description:", sanitized_description)
             print()
+
             self.questions_and_answers.append(
-                {"question": question, "answer": description}
+                {"question": question, "answer": sanitized_description}
             )
 
     def read_thematique(self):
@@ -75,7 +86,8 @@ class DataLLMsEB:
 
     def sanitize_content(self, content):
         # Remove HTML tags and keep only plain text
-        sanitized_content = bleach.clean(content, tags=[], strip=True)
+        sanitized_content = bleach.clean(content, tags=["a"],
+                                         attributes={"a": ["href"]}, strip=True)
         return sanitized_content
 
     def save_to_pdf(self):
@@ -92,7 +104,7 @@ class DataLLMsEB:
         for qa in self.questions_and_answers:
             question = Paragraph(qa["question"], styles["Heading2"])
             answer = Paragraph(
-                self.sanitize_content(qa["answer"]), styles["BodyText"]
+                qa["answer"], styles["BodyText"]
             )
             story.append(question)
             story.append(answer)
